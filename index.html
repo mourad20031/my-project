@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI Chat - Mourad, Imane & Mourmane</title>
+    
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- ===== Apple Touch Icon ===== -->
+    <link rel="apple-touch-icon" href="icon-512.png">
+    
+    <!-- ===== Theme Color ===== -->
+    <meta name="theme-color" content="#2b303b">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Model AI Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header id="chat-header">
+            <div id="header-left">
+                <span id="hamburger-icon">☰</span>
+                <span id="chat-title"># general</span>
+            </div>
+            <div id="header-right">
+                <span id="user-status">● online</span>
+                <span id="user-avatar">👤</span>
+            </div>
+        </header>
+
+        <main id="chat-main">
+            <aside id="sidebar">
+                <nav id="channel-list">
+                    <h3>Channels</h3>
+                    <ul>
+                        <li class="channel active"># general</li>
+                        <li class="channel"># random</li>
+                        <li class="channel"># dev</li>
+                        <li class="channel"># design</li>
+                    </ul>
+                </nav>
+                <section id="user-list">
+                    <h3>🤖 AI Models</h3>
+                    <ul>
+                        <li class="user model-option" data-model="mourad">🧠 Mourad</li>
+                        <li class="user model-option" data-model="imane">⚡ Imane</li>
+                        <li class="user model-option" data-model="mourmane">🐉 Mourmane</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <section id="message-panel">
+                <div id="message-display"></div>
+                <div id="message-input-area">
+                    <div id="input-wrapper">
+                        <input type="text" id="message-input" placeholder='Type "@mourad", "@imane", or "@mourmane" to switch...' />
+                        <button id="send-button">➤</button>
+                    </div>
+                    <div id="input-actions">
+                        <span class="action-icon">📎</span>
+                        <span class="action-icon">😊</span>
+                        <span class="action-icon">🎤</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="chat-footer">
+            <p>🤖 Mourad · Imane · Mourmane</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
